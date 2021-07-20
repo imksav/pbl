@@ -3,8 +3,6 @@ import 'package:pbl/screens/login_page.dart';
 import 'package:pbl/screens/signup_page.dart';
 
 class LandingPage extends StatelessWidget {
-  const LandingPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,8 +39,7 @@ class LandingPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  LogInPage(title: "Log In")));
+                              builder: (BuildContext context) => LogInPage()));
                     },
                   ),
                   MaterialButton(
@@ -65,8 +62,7 @@ class LandingPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  SignUpPage(title: "Sign Up")));
+                              builder: (BuildContext context) => SignUpPage()));
                     },
                   ),
                 ],
