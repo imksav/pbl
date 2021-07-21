@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pbl/screens/homepage.dart';
 import 'package:pbl/screens/signup_page.dart';
 
 class LogInPage extends StatefulWidget {
@@ -87,7 +88,12 @@ class _LogInPageState extends State<LogInPage> {
                       child: Text("Log In",
                           style:
                               TextStyle(color: Colors.white, fontSize: 16.0)),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => HomePage()));
+                      },
                     ),
                   ),
                   Padding(
